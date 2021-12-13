@@ -22,7 +22,7 @@
                 <hr>
             </div>
             @auth
-            <form method="POST" class="m-3 align-items-end">
+            <form method="POST" action="{{route('carts.store')}}" class="m-3 align-items-end">
                 {{ csrf_field() }}
                 <input type="hidden" name="id" value="{{$product->id}}">
                 <input type="hidden" name="name" value="{{$product->name}}">
@@ -43,16 +43,16 @@
                     </div>
                     <div class="col-5">
                         @if($product->isFavoritedBy(Auth::user()))
-+                        <a href="/products/{{ $product->id }}/favorite" class="btn samazon-favorite-button text-favorite w-100">
-+                            <i class="fa fa-heart"></i>
-+                            お気に入り解除
-+                        </a>
-+                        @else
-+                        <a href="/products/{{ $product->id }}/favorite" class="btn samazon-favorite-button text-favorite w-100">
-+                            <i class="fa fa-heart"></i>
-+                            お気に入り
-+                        </a>
-+                        @endif
+                         <a href="/products/{{ $product->id }}/favorite" class="btn samazon-favorite-button text-favorite w-100">
+                             <i class="fa fa-heart"></i>
+                             お気に入り解除
+                         </a>
+                         @else
+                         <a href="/products/{{ $product->id }}/favorite" class="btn samazon-favorite-button text-favorite w-100">
+                             <i class="fa fa-heart"></i>
+                             お気に入り
+                         </a>
+                         @endif
                     </div>
                 </div>
             </form>
@@ -84,7 +84,7 @@
                     </form>
                 </div>
             </div>
-            @endauthpro
+            @endauth
         </div>
     </div>
 </div>
