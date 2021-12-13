@@ -1,0 +1,35 @@
+[33mcommit db561c1653aea22f6a4d0659a01d27c14aac3ab7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32madd_header[m[33m)[m
+Author: takahumininomiya <lotte04715923210@gmail.com>
+Date:   Mon Dec 13 03:43:46 2021 +0000
+
+    07 add header
+
+[33mcommit e79e1cb0f239576e056617b03e934e6cff6d3768[m
+Author: takahumininomiya <lotte04715923210@gmail.com>
+Date:   Mon Dec 13 02:41:23 2021 +0000
+
+    06 use css framework
+
+[33mcommit e8bb7648c8db4131df87b87c1eae5f4654854487[m
+Author: takahumininomiya <lotte04715923210@gmail.com>
+Date:   Sun Dec 12 10:35:54 2021 +0000
+
+    login
+
+[33mcommit 34c81698d1be6b56c8b28733ba8af0128578aa3e[m
+Author: takahumininomiya <lotte04715923210@gmail.com>
+Date:   Fri Dec 10 05:32:12 2021 +0000
+
+    04 create products table
+
+[33mcommit df431713eb9e899e2e34c2800228a37cc4e6f474[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: takahumininomiya <lotte04715923210@gmail.com>
+Date:   Tue Dec 7 13:40:59 2021 +0000
+
+    03 create categories table
+
+[33mcommit cf6e0bbe07a487cb6bac2aecb7f502ce9b971890[m
+Author: EC2 Default User <ec2-user@ip-172-31-21-8.us-west-2.compute.internal>
+Date:   Tue Dec 7 11:33:58 2021 +0000
+
+    first commit
