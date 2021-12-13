@@ -15,7 +15,7 @@ class User extends Authenticatable implements MustVerifyEmail
      {
          $this->notify(new CustomVerifyEmail());
      }
-     ublic function sendPasswordResetNotification($token) {
+     public function sendPasswordResetNotification($token) {
          $this->notify(new CustomResetPassword($token));
      }
 
@@ -46,4 +46,9 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function reviews()
+    {
+        return $this->hasMany('App\Review');
+    }
 }
