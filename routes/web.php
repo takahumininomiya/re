@@ -43,7 +43,7 @@
       Route::get('login', 'Dashboard\Auth\LoginController@showLoginForm')->name('login');
       Route::post('login', 'Dashboard\Auth\LoginController@login')->name('login');
   Route::resource('categories', 'Dashboard\CategoryController')->middleware('auth:admins');
- 
+ Route::resource('products', 'Dashboard\ProductController')->middleware('auth:admins');
   });
 
   if (env('APP_ENV') === 'production') {
